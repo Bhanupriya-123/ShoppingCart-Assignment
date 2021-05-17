@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" type="text/css" href="src/stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--header/navigation block-->
+    <header class="navigation">
+        <!--logo-->
+        <div class="logo">
+            <img src="images/happy.png" alt="shopping-logo">
+        </div>
+        <!--menu-->
+        <div id="menu-block">
+            <ul class="menu">
+                <li><a href="images/home-9.jpg">Home</a></li>
+                <li><a href="images/men-1.jpg">Men</a></li>
+                <li><a href="images/women-1.jpg">Women</a></li>
+            </ul>
+        <!--right-menu-->
+            <div class="right-menu">
+                <!--search-->
+                <div id="searchWrapper">
+                    <input type="text" name="searchBar" id="searchBar" placeholder="search for a character"/>
+                </div>
+                <ul id="charactersList"></ul>
+                <!--add to cart-->
+                <div id="cartDiv">
+                    <a href="#" id="addToCart">
+                        <i class="fas fa-shopping-cart" id="cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--section block-->
+    <section class="cat-contain"> 
+        <!--aside block / categories-->
+        <section class="categories">
+            <div class="catPrice">
+            
+                <div class="iconsForCat">
+                    <h4>CATEGORIES</h4>
+                    <div class="icon"><i class="fas fa-gifts"></i> <a href="#" >All</a></div>
+                    <div class="icon"><i class="fas fa-users"></i> <a href="#" >Men</a></div>
+                    <div class="icon"><i class="fas fa-user-friends"></i> <a href="#"  >Women</a></div>
+                    <div class="icon"><i class="fas fa-laptop-medical"></i> <a href="#" >Electronics</a></div>
+                    <div class="icon"><i class="fas fa-ring"></i> <a href="#" >Jewellery</a></div> 
+                </div>
+
+                <!--article block-->
+                <div class="priceList-block">
+                    <article class="article">
+                        <h4>PRICE-LIST</h4>
+                        <!--Price range from Rs.0 - Rs.200-->
+                        <p><input type="radio" name="price"/> &#8377;.0 - &#8377;.100</p>
+                        <!--Price range from Rs.200-Rs.400-->
+                        <p> <input type="radio" name="price"/> &#8377;.200 - &#8377;.400</p>
+                        <!--Price range from Rs.400-Rs.600-->
+                        <p> <input type="radio" name="price"/> &#8377;.400 - &#8377;.600</p>
+                        <!--Price range from Rs.600-Rs.800-->
+                        <p><input type="radio" name="price"/> &#8377;.600 - &#8377;.800</p>
+                        <!--Price range from Rs.800-Rs.1000-->
+                        <p> <input type="radio" name="price"/> &#8377;.800 - &#8377;.1000</p>
+                    
+                        <button id="btnApply">Apply</button>
+                    </article> 
+                </div>
+            </div>
+        </section>
+        <!--aside block-->
+        <aside class="container">
+            <div class="displayCart">
+                
+                <button id="clearCart"></button>
+                <p id="demo"></p>
+            
+            </div>
+            <div class="productList"></div>
+            <div class="details"></div>
+        </aside>
+    </section>
+    <!--footer block-->
+    <footer class="footer">
+        <div class="containerFooter">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a> 
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--javascript-->
+    <script src="dist/main.js"></script>
+</body>
+</html>

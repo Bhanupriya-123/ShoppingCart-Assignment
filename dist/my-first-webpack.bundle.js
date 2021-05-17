@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector("button"),t=document.querySelector("input");e.addEventListener("click",(()=>{var e;e=t.value,console.log(e)}));console.log("hello");const n=document.createElement("h1");n.innerText="this is generated",document.body.appendChild(n)})();
