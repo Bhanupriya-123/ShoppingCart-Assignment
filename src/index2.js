@@ -4,4 +4,5 @@ const productData = async () => {
     const data = await response.json();
     return data;
   };
-module.exports = productData; 
+//module.exports = productData; 
+export default productData;//ES6

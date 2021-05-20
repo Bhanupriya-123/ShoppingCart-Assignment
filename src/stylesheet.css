@@ -12,7 +12,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 45px;
+    
     background: linear-gradient(to bottom, #66ffcc 0%, #0066ff 100%);
 }
 .logo img{ 
@@ -58,7 +58,9 @@ aside {
 
 #cart{
     font-size: 30px;
+    
 }
+
 .container{
     padding: 30px 0 30px 20px;
 }
@@ -74,17 +76,17 @@ aside {
     line-height: 35px;
 }
 .categories h4:hover{
-    color: rgb(243, 43, 126);
+    color: #fff;
     padding-left: 8px;
     transition: all 0.3s ease;
-    background-color:#fff;
+    background-color:rgb(243, 38, 226);
 }
 .catPrice{
     width: 150px;
     padding-left: 50px;
     padding-top: 30px;
 }
-.icon:hover{
+.icon:hover, .iconPrice:hover{
     color: rgb(243, 43, 126);
     padding-left: 8px;
     transition: all 0.3s ease;
@@ -142,7 +144,7 @@ aside {
     
 }
 .containerFooter{
-    max-width: 1170px;
+   
     margin: auto;
 }
 ul{
@@ -153,18 +155,18 @@ ul{
     border: 2px solid blue;
     margin: 20px;
 }
-#homeBtn{
+#homeBtn,#clearCart{
     margin-left: 20px;
     padding: 5px 25px 5px 25px;
     border-radius: 20px;
     font-size: 15px;
 }
-#homeBtn:hover{
+#homeBtn:hover, #clearCart:hover{
     background-color: rgb(248, 69, 105);
 }
 .footer-col{
     width: 25%;
-    padding: 0 15px;
+    
 }
 .footer-col h4{
     font-size: 18px;
@@ -236,7 +238,21 @@ ul{
     }
 }*/
 
-
+/*--------------Responsive Design-------------*/
+@media (max-width: 950px) {
+    #menu-block{
+        display: flex;
+    } 
+    .navigation{
+        display:block;
+        
+    }
+    .cat-contain {
+        
+        display: flex;
+        background: linear-gradient(to right, #00ffff 0%, #00ff00 100%);
+    }
+}
 
 @media (max-width: 900px) {
     #menu-block{
@@ -245,32 +261,28 @@ ul{
     .navigation{
         display:block;
     }
-}
-@media (max-width: 700px){
-    .navigation{
-        display:block;
+    .cat-contain {
+        display: inline-block;
+        background: linear-gradient(to right, #00ffff 0%, #00ff00 100%);
     }
-    #menu-block {
+    footer {
         display: block;
     }
+    .catPrice{
+        display: inline-block;
+    }
+    .right-menu{
+        display: inline-block;
+        padding-top: 15px;
+    }
 }
-@media only screen and (max-width: 400px) {
-    .navigation {
-        background: linear-gradient(to bottom, #66ffcc 0%, #0066ff 100%);
+@media (max-width: 700px){
+    
+    #menu-block {
+        display: inline-block;
     }
-    .cat-contain {
-        background: linear-gradient(to right, #00ffff 0%, #00ff00 100%);
-        font-size: 10px;
-        width: 20%;
-        padding-left: 10px;
-      }
-    .categories {
-        background: linear-gradient(to right, #00ffff 0%, #00ff00 100%);
-      }
-    .footer{
-        background: linear-gradient(to bottom, #0000ff 0%, #66ffff 100%);
-    }
-  }
+}
+
 @media only screen and (max-width: 700px) {
     .navigation {
         background: linear-gradient(to bottom, #66ffcc 0%, #0066ff 100%);
@@ -280,14 +292,31 @@ ul{
         justify-content: space-between;
     }
     .cat-contain {
-        display: block;
+        display: inline-block;
+        background: linear-gradient(to right, #00ffff 0%, #00ff00 100%);
     }
-    .catPrice {
-        width: auto;
-        display: flex;
+    .menu {
+        display: inline-block;
     }
-
     #btnApply{
         padding:0;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .navigation {
+        background: linear-gradient(to bottom, #66ffcc 0%, #0066ff 100%);
+        display: inline-block;
+    }
+    .categories {
+        background: linear-gradient(to right, #00ffff 0%, #00ff00 100%);
+        display: inline-block;
+      }
+    .footer{
+        background: linear-gradient(to bottom, #0000ff 0%, #66ffff 100%);
+        display: inline-block;
+    }
+    .footer-col {
+        width: 25%;
+    }
+  }
